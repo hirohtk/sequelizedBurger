@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 password
 burger_database.sql
+config.json
+sequelized_)burger_database.sql
