@@ -1,0 +1,4 @@
+node_modules
+.DS_Store
+password
+burger_database.sql

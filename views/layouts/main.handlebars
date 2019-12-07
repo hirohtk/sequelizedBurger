@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <title>Burger Assignment</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- had to take out bootstrap slim Jquery- it was disabling me from being able to use ajax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/burger.js"></script>
+    <style type="text/css">
+        .jumbotron {
+            background-color: goldenrod;
+        }
+
+        body {
+            background-color: goldenrod
+        }
+
+        .half {
+            border: 1px ridge black
+        }
+
+        li {
+            border: 1px ridge black;
+            background-color: gold;
+        }
+
+        header {
+            position: relative;
+            background-color: black;
+            height: 35vh;
+            min-height: 5rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            height: 60%;
+            min-height: 50%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+
+        h2 {
+            color: maroon;
+        }
+        /*.footer-ish {
+            background-image: url("https://assets.bonappetit.com/photos/5d1cb1880813410008e914fc/16:9/w_1200,c_limit/Print-Summer-Smash-Burger.jpg")
+        }*/
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+
+            /* Style the video: 100% width and height to cover the entire window */
+            #myVideo {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                height: 20rem;
+            }
+
+            /* Add some content at the bottom of the video/page */
+            .content {
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id = "videoContainer">
+
+        <header>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source
+                    src="https://static.videezy.com/system/resources/previews/000/025/336/original/MM002732____BBQ_161____1080p____A054_C116_03279U_001.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">EAT DA BURGER</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+</div>  
+
+        {{{ body }}}
+<!--Stock Video by <a href="http://www.videezy.com">Videezy</a>-->
+</body>
+
+</html>
