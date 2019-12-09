@@ -6,6 +6,7 @@ module.exports = function (app) {
     //showing all burgers
     app.get("/", function (req, res) {
         db.burgers.findAll({}).then(function (response) {
+            
             res.json(response);
         });
     });
